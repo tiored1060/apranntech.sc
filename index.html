@@ -57,6 +57,106 @@ section{padding:58px 0}.section-title{text-align:center;margin-bottom:30px}.sect
   align-items:center;
   gap:38px;
 }
+
+  
+/* Aprann Tech mobile improvements */
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+  font-size: 16px;
+}
+
+button {
+  min-height: 44px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-grid,
+  .cards,
+  .module-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 7vw, 38px);
+    line-height: 1.15;
+  }
+
+  .app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 10px;
+  }
+
+  .side button {
+    flex: 1 1 130px;
+    width: auto;
+    text-align: center;
+  }
+
+  .side span {
+    display: inline;
+  }
+
+  .dash {
+    min-width: 0;
+    padding: 16px;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 38px 0;
+  }
+
+  section {
+    padding: 38px 0;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title h2 {
+    font-size: 26px;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+  }
+}
+
 .aprann-hero-copy{position:relative;z-index:2;padding:42px 0;}
 .aprann-hero-copy h1{font-size:clamp(46px,5vw,76px);line-height:.98;margin:18px 0 28px;letter-spacing:-2px;color:#fff;}
 .aprann-hero-copy>p{font-size:21px;line-height:1.7;max-width:760px;color:rgba(255,255,255,.96);}
