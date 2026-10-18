@@ -9406,6 +9406,7 @@ document.querySelectorAll('.aprann-quick').forEach(x=>x.onclick=()=>{const k=x.d
 })();
 </script>
  
+
 <style id="aprann-mobile-dashboard-size-fix">
 @media (max-width: 600px) {
   body {
@@ -9413,31 +9414,46 @@ document.querySelectorAll('.aprann-quick').forEach(x=>x.onclick=()=>{const k=x.d
   }
 
   #app,
-  .app,
-  .app-grid,
-  .dash {
-    box-sizing: border-box;
-    min-width: 0;
-    max-width: 100%;
+  .app {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
   }
 
   .app-grid {
+    display: block !important;
     grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    min-width: 0 !important;
   }
 
   .side {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 100%;
+    display: none !important;
+  }
+
+  .dash {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 14px !important;
+    box-sizing: border-box !important;
   }
 
   .dash > *,
   .stat,
   .module,
   .dashboard-progress-panel {
-    min-width: 0;
-    max-width: 100%;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
     overflow-wrap: anywhere;
+  }
+
+  .stat-grid,
+  .dashboard-progress-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
   }
 
   img,
