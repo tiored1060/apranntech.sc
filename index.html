@@ -9405,4 +9405,46 @@ B.onclick=open;C.onclick=()=>{W.classList.remove('open');W.setAttribute('aria-hi
 document.querySelectorAll('.aprann-quick').forEach(x=>x.onclick=()=>{const k=x.dataset.chat;send({courses:'What courses do you offer?',membership:'What membership plans are available?',exams:'What exams are available?',videos:'What video lessons are available?',contact:'How can I contact Aprann Tech?'}[k])});
 })();
 </script>
+ 
+<style id="aprann-mobile-dashboard-size-fix">
+@media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #app,
+  .app,
+  .app-grid,
+  .dash {
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .app-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .side {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .dash > *,
+  .stat,
+  .module,
+  .dashboard-progress-panel {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  img,
+  table {
+    max-width: 100%;
+  }
+}
+</style>
+ 
 </body></html>
