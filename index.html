@@ -9437,12 +9437,27 @@ document.querySelectorAll('.aprann-quick').forEach(x=>x.onclick=()=>{const k=x.d
   display: flex !important;
   flex-direction: row !important;
   flex-wrap: nowrap !important;
-  gap: 6px !important;
+  gap: 5px !important;
   padding: 8px !important;
   overflow-x: auto !important;
+  overflow-y: hidden !important;
   box-sizing: border-box !important;
   width: 100% !important;
   align-items: center !important;
+  scrollbar-width: thin;
+}
+
+.side button {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: 76px !important;
+  min-height: 40px !important;
+  padding: 9px 11px !important;
+  margin: 0 !important;
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+  text-align: center !important;
 }
 
   .dash {
