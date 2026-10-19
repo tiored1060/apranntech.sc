@@ -9462,5 +9462,20 @@ document.querySelectorAll('.aprann-quick').forEach(x=>x.onclick=()=>{const k=x.d
   }
 }
 </style>
+
+  <style id="aprann-mobile-chat-fix">
+@media (max-width: 600px) {
+  #chat-widget,
+  .chat-widget,
+  .chat-button,
+  .chat-launcher,
+  [class*="chat-widget"],
+  [id*="chat-widget"] {
+    bottom: 90px !important;
+    right: 12px !important;
+    z-index: 50 !important;
+  }
+}
+</style>
  
 </body></html>
