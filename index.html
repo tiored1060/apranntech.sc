@@ -9501,33 +9501,40 @@ document.querySelectorAll('.aprann-quick').forEach(x=>x.onclick=()=>{const k=x.d
     height: min(560px, calc(100vh - 105px)) !important;
   }
 }
-   /* Compact mobile dashboard navigation */
+  /* Compact mobile dashboard navigation */
 @media (max-width: 600px) {
   .app-grid > .side {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 6px !important;
-    padding: 12px !important;
+    gap: 4px !important;
+    padding: 8px !important;
     align-items: stretch !important;
   }
 
   .app-grid > .side > b {
     grid-column: 1 / -1 !important;
-    padding: 0 0 4px !important;
-    font-size: 16px !important;
+    padding: 0 0 2px !important;
+    margin: 0 !important;
+    font-size: 15px !important;
+    line-height: 1.2 !important;
   }
 
   .app-grid > .side > button {
     width: 100% !important;
     min-width: 0 !important;
-    min-height: 40px !important;
-    padding: 9px 5px !important;
+    min-height: 34px !important;
+    padding: 6px 4px !important;
     margin: 0 !important;
-    font-size: 12px !important;
-    line-height: 1.25 !important;
+    font-size: 11px !important;
+    line-height: 1.2 !important;
     overflow-wrap: anywhere !important;
   }
-} 
+
+  #app,
+  .app {
+    padding-top: 0 !important;
+  }
+}
 </style>
  
 </body></html>
