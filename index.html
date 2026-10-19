@@ -9474,6 +9474,21 @@ document.querySelectorAll('.aprann-quick').forEach(x=>x.onclick=()=>{const k=x.d
     bottom: 90px !important;
     right: 12px !important;
     z-index: 50 !important;
+    /* Mobile chat widget positioning */
+@media (max-width: 600px) {
+  #aprannChatButton {
+    right: 12px !important;
+    bottom: 20px !important;
+    width: 54px !important;
+    height: 54px !important;
+  }
+
+  #aprannChatWindow {
+    right: 10px !important;
+    bottom: 84px !important;
+    width: calc(100vw - 20px) !important;
+    max-width: 380px !important;
+    height: min(560px, calc(100vh - 105px)) !important;
   }
 }
 </style>
