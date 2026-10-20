@@ -9642,7 +9642,6 @@ header {
 }
 </style>
  
-
 <style id="aprann-mobile-nav-final">
 @media (max-width: 600px) {
   #app .app-grid {
@@ -9661,18 +9660,12 @@ header {
     min-height: 0 !important;
     height: auto !important;
     margin: 0 !important;
-   padding: 8px 12px !important;
-scroll-padding-left: 12px !important;
+    padding: 8px !important;
+    background: #082f49 !important;
     overflow-x: auto !important;
     overflow-y: hidden !important;
-    background: #082f49 !important;
     border-radius: 0 !important;
-    box-sizing: border-box !important;
-    scrollbar-width: none !important;
-  }
-
-  #app .side::-webkit-scrollbar {
-    display: none !important;
+    -webkit-overflow-scrolling: touch;
   }
 
   #app .side > b {
@@ -9680,17 +9673,23 @@ scroll-padding-left: 12px !important;
   }
 
   #app .side button {
-    display: block !important;
     flex: 0 0 auto !important;
     width: auto !important;
-    min-width: max-content !important;
-    min-height: 36px !important;
+    min-height: 38px !important;
     margin: 0 !important;
     padding: 9px 12px !important;
     border-radius: 8px !important;
     font-size: 12px !important;
     line-height: 1.2 !important;
     white-space: nowrap !important;
+  }
+
+  #app .dash {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 14px !important;
+    box-sizing: border-box !important;
   }
 }
 </style>
