@@ -9459,6 +9459,47 @@ document.querySelectorAll('.aprann-quick').forEach(x=>x.onclick=()=>{const k=x.d
   img,
   table {
     max-width: 100%;
+    html{-webkit-text-size-adjust:100%}
+img,video,iframe{max-width:100%}
+.field{font-size:16px}          /* stops iPhones zooming in when a field is tapped */
+button{min-height:44px}         /* comfortable tap size */
+
+@media(max-width:800px){
+  .container{padding:0 16px}
+  section{padding:40px 0}
+
+  /* header: let it grow instead of squashing into 70px */
+  .head{height:auto;min-height:64px;flex-wrap:wrap;gap:8px;padding:8px 0}
+  .nav{display:none}
+
+  /* hero, cards, modules: single column */
+  .hero-grid,.cards,.module-grid{grid-template-columns:1fr}
+  .hero h1{font-size:34px}
+  .hero p{font-size:17px}
+
+  /* dashboard: side menu becomes a swipeable strip across the top */
+  .app-grid{grid-template-columns:1fr;min-height:0}
+  .side{display:flex;gap:6px;overflow-x:auto;padding:10px;-webkit-overflow-scrolling:touch}
+  .side button{width:auto;flex:0 0 auto;white-space:nowrap;margin:0;padding:10px 14px}
+  .side span{display:inline}
+  .dash{padding:16px}
+
+  .stat-grid{grid-template-columns:1fr 1fr}
+  .stat strong{font-size:24px}
+
+  /* tables scroll sideways instead of being cut off */
+  .table{display:block;overflow-x:auto;white-space:nowrap}
+}
+
+@media(max-width:500px){
+  .hero{padding:44px 0}
+  .hero h1{font-size:30px}
+  .hero-actions{flex-direction:column}
+  .hero-actions button{width:100%}
+  .stat-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .login-area{padding:30px 0}
+  .login-box{padding:20px}
+  .footer-grid{flex-direction:column}
   }
 }
 </style>
